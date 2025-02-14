@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day Mommy</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+  <link rel="stylesheet" href="Valentines.css">
+</head>
+<body>
+
+  <div id="headlinecontainer">
+    <div id="shine">Happy Valentine's Day💞</div>
+  </div>
+
+  <audio id="Background-Music" autoplay loop muted>
+    <source src="Gallery/Music Background/Taylor Swift - Lover (Official Music Video).mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      let audio = document.getElementById("Background-Music");
+      audio.muted = false; 
+      audio.play().catch(error => console.log("Autoplay blocked:", error));
+      let music = document.getElementById("Background-Music");
+      music.volume = 0.5;
+    });
+  </script>
+
+  <div class="Gallery">
+    <img src="/Gallery/Windy and Me 7.jpg" alt="Kape Hingahan">
+    <img src="/Gallery/Windy and Me 18.jpg" alt="Holding Hands">
+    <img src="/Gallery/Windy and Me 3.jpeg" alt="Mcdonalds">
+    <img src="/Gallery/Windy and Me 2.jpeg" alt="Karaoke">
+    <img src="/Gallery/Windy and Me 11.jpg" alt="Kape Hingahan ulet">
+  </div>
+
+  <div class="Message">
+    <p>Happy Valentines Day, thank you for all the hardships, gifts, concerns, love and happiness that we always been through.
+      <br>Every Days, Seconds, Minutes and Hours we've always spending together is so important and happy to me, i'm lucky to
+      <br>to have you always by my side and not letting me go alone, thank you for letting me have you in your life, i'll do  
+      <br>my best to be something so worthful and wonderful for you, Let's do this together and make it through the end together,
+      <br>i will always love you and will never leave you no matter what happen, I love you more than words can express.
+      <br>Windy Carisma💖</p>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      let message = document.querySelector('.Message');
+    });
+  </script>
+</body>
+</html>
